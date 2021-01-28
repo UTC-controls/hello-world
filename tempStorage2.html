@@ -1,0 +1,24 @@
+<html>
+      <div id="notes"> </div>
+      <div onclick="ChangeVar();">click!</div>
+
+<script>
+      var Example = "Hello world";
+
+      function TellMe() {
+            alert(Example);
+      }
+
+      function ChangeVar() {
+            Example = "Goodbye world";
+      }
+      
+      if(typeof(Storage)!=="undefined" && localStorage.lastname) {
+            document.getElementById("notes").innerHTML="Last name: " + localStorage.lastname;
+      } else {
+            document.getElementById("notes").innerHTML="Sorry, your browser does not support web storage...";
+      }
+      
+</script>
+
+</html>

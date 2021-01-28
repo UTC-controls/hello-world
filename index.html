@@ -8,8 +8,16 @@
     <a href="https://utc-controls.github.io/hello-world/page.html"> Page Link </a>
     <br>
     <a href="https://utc-controls.github.io/hello-world/download.txt" download> Download Link </a>
+    <br>
+    <form name="userIn">
+      <p> Input <input type="text" name="userInput"> </p>
+    </form>
+    
   </body>
-  
+  <script>
+    var inp = parseFloat(document.userIn.userInput.value);
+    alert(inp);
+  </script>
   <script src="main.js">
   </script>
 </html>

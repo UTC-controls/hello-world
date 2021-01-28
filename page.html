@@ -7,7 +7,12 @@
         <br>
       <script> 
         var a = 3 + 2; 
-        document.write(a); 
+        document.write(a);
+       
+        function othername() {
+        var input = document.getElementById("userInput").value;
+        alert(input);
+      }
       </script>
       </form>
       <form id="form" onsubmit="return false;">
@@ -15,7 +20,4 @@
       <input style="position:absolute; top:50%; left:5%; width:40%;" type="submit" onclick="othername();" />
       </form>
 
-      function othername() {
-        var input = document.getElementById("userInput").value;
-        alert(input);
-      }
+      

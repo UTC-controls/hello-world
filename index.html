@@ -11,12 +11,15 @@
     <br>
     <form name="userIn">
       <p> Input <input type="text" name="userInput"> </p>
+      <input type="button" value="respond" onclick="Show();">
     </form>
     
   </body>
   <script>
+    function Show() {
     var inp = parseFloat(document.userIn.userInput.value);
     alert(inp);
+    }
   </script>
   <script src="main.js">
   </script>

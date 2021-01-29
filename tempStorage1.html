@@ -1,11 +1,21 @@
 <html>
-  
- <a href="https://utc-controls.github.io/hello-world/tempStorage2.html"> Test Link </a>
+   <a href="https://utc-controls.github.io/hello-world/tempStorage2.html"> Test Link </a>
     <br> 
+  
+  <form name="userIn">
+      <p> Input <input type="text" name="userInput"> </p>
+      <input type="button" value="respond" onclick="Show();">
+  </form>
     
-<script>
+  <script>
+    function Show() {
+    var inp = parseFloat(document.userIn.userInput.value);
+    alert(inp);
+    }
+  
+  
 // Save data to the current session's store
-sessionStorage.setItem("username", "John");
+sessionStorage.setItem("username", inp);
       
 </script>
 

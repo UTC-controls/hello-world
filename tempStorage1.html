@@ -4,18 +4,12 @@
   
   <form name="userIn">
       <p> Input <input type="text" name="userInput"> </p>
-      <input type="button" value="respond" onclick="Show();">
   </form>
     
   <script>
-    function Show() {
-    var inp = parseFloat(document.userIn.userInput.value);
-    alert(inp);
-    }
-  
-  
-// Save data to the current session's store
-sessionStorage.setItem("username", inp);
+   var inp = document.userIn.userInput.value);
+   // Save data to the current session's store
+   sessionStorage.setItem("username", inp);
       
 </script>
 

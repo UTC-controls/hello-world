@@ -14,7 +14,7 @@
    // Save data to the current session's store
    function Save() {
     //var inp = parseFloat(document.userIn.userInput.value);
-    var inp = document.getElementById("userInput").value
+    var inp = document.getElementsByName("userInput").value
     sessionStorage.setItem("username", inp)
     alert(inp + " should be saved as \"username\"");
     }                                                      

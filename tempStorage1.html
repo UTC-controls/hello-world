@@ -1,5 +1,5 @@
 <html>
-    <head> <title> vers1.0 </title> </head>
+    <head> <title> vers1.1 </title> </head>
     <a href="https://utc-controls.github.io/hello-world/tempStorage2.html"> Test Link </a>
     <br> 
   
@@ -12,7 +12,8 @@
    
    // Save data to the current session's store
    function Save() {
-    var inp = parseFloat(document.userIn.userInput.value);
+    //var inp = parseFloat(document.userIn.userInput.value);
+    document.getElementById("userInput").value
     sessionStorage.setItem("username", inp)
     alert(inp + " should be saved as \"username\"");
     }                                                      
